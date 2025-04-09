@@ -1,0 +1,1538 @@
+{
+  "modelName": "New Model",
+  "collections": [
+    {
+      "collectionName": "Trips",
+      "type": "object",
+      "properties": [
+        {
+          "name": "trip_id",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "integer",
+          "properties": [],
+          "GUID": "e4129c10-1bd5-4400-8311-67449dc09980",
+          "primaryKey": true,
+          "error": {},
+          "childRelationships": [
+            "645742d2-2d53-4aa0-bf07-b7ee262bcb80"
+          ]
+        },
+        {
+          "name": "start_time",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "properties": [],
+          "GUID": "926654e5-7524-4f33-ad73-9f981e5dd131",
+          "format": "date-time",
+          "error": {}
+        },
+        {
+          "name": "end_time",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "properties": [],
+          "GUID": "188c4b76-24bc-4e28-87a2-0102440c2a28",
+          "format": "date-time",
+          "error": {}
+        },
+        {
+          "name": "trip_duration",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "numeric",
+          "properties": [],
+          "error": {},
+          "GUID": "8928721b-5952-4862-896d-d8fb96f6c95d"
+        },
+        {
+          "name": "trip_distance",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "numeric",
+          "properties": [],
+          "error": {},
+          "GUID": "0c9158eb-7b65-405f-b155-f6bf9412975e"
+        },
+        {
+          "name": "bike_used",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "integer",
+          "properties": [],
+          "error": {},
+          "GUID": "f315078f-c97c-4f9b-9d0d-36e932c77aa9",
+          "relationshipType": "Foreign Key",
+          "foreignCollection": "81d6600d-e2eb-46e0-a5ef-66cd5bcde2d8",
+          "foreignField": [
+            "81d6600d-e2eb-46e0-a5ef-66cd5bcde2d8",
+            "e2f8c96b-547d-47e5-af6c-1e92e3bf93b9"
+          ],
+          "parentRelationship": "25e5acf4-c38b-46fb-b4ab-04f26dd22af7"
+        },
+        {
+          "name": "trip_user",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "integer",
+          "properties": [],
+          "error": {},
+          "GUID": "9eed260a-6494-4b67-8984-f87984161b9f",
+          "relationshipType": "Foreign Key",
+          "foreignCollection": "c216bd4b-c05f-41c3-9d47-049fb556efca",
+          "foreignField": [
+            "c216bd4b-c05f-41c3-9d47-049fb556efca",
+            "e325f805-ae3f-4e1f-85ae-f826d9fb0d93"
+          ],
+          "parentRelationship": "344f0073-c56e-4a93-8ff9-dff9d3a7510d"
+        },
+        {
+          "name": "from_station ",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "integer",
+          "properties": [],
+          "error": {},
+          "GUID": "290bdd2c-9d6e-4e95-9971-c707a3f182ad",
+          "relationshipType": "Foreign Key",
+          "foreignCollection": "46985d73-11d3-49aa-879f-af903d2efa68",
+          "foreignField": [
+            "46985d73-11d3-49aa-879f-af903d2efa68",
+            "36ec558e-34eb-4c04-a8a7-6c18c76adf2a"
+          ],
+          "parentRelationship": "50f4bc9d-21f0-4f42-a634-8a421f127520"
+        },
+        {
+          "name": "to_station",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "integer",
+          "properties": [],
+          "error": {},
+          "GUID": "3618563b-d343-47c1-a0cc-14fbda3a6c2f",
+          "relationshipType": "Foreign Key",
+          "foreignCollection": "46985d73-11d3-49aa-879f-af903d2efa68",
+          "foreignField": [
+            "46985d73-11d3-49aa-879f-af903d2efa68",
+            "36ec558e-34eb-4c04-a8a7-6c18c76adf2a"
+          ],
+          "parentRelationship": "eca4a369-b86d-4a5c-8d54-74429fb419df"
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "c2b3d4d8-d5a6-4de1-88f1-a3e6bbd2b9df"
+      },
+      "isActivated": true,
+      "additionalProperties": false,
+      "GUID": "4a21f830-248a-4231-aa75-8dfe93191c86",
+      "bucketId": "d6cb6c5c-9d02-4368-bab8-e0bdd1fa2100"
+    },
+    {
+      "collectionName": "Users ",
+      "type": "object",
+      "properties": [
+        {
+          "name": "user_id ",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "integer",
+          "properties": [],
+          "GUID": "e325f805-ae3f-4e1f-85ae-f826d9fb0d93",
+          "primaryKey": true,
+          "error": {},
+          "childRelationships": [
+            "344f0073-c56e-4a93-8ff9-dff9d3a7510d",
+            "62166940-70e7-439b-a8da-8df1dea754d9",
+            "e1aab1ad-90a4-4650-a7fc-76130338af6a"
+          ]
+        },
+        {
+          "name": "first_name",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "properties": [],
+          "GUID": "709b22c3-28db-4515-a91c-152be41fa82f",
+          "error": {}
+        },
+        {
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "properties": [],
+          "GUID": "db78024a-2500-4848-817f-00c97ff8afb9",
+          "name": "last_name",
+          "error": {
+            "enum": false,
+            "enums": []
+          }
+        },
+        {
+          "name": "age",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "integer",
+          "properties": [],
+          "error": {},
+          "GUID": "4559cca5-bae0-471f-9310-50b640a284be"
+        },
+        {
+          "name": "gender",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "properties": [],
+          "GUID": "adc5f0ae-24cd-4166-89a3-cc69f26401c7",
+          "error": {
+            "enum": false,
+            "enums": false
+          },
+          "enum": [
+            "male",
+            "female",
+            "other"
+          ]
+        },
+        {
+          "name": "email",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "properties": [],
+          "GUID": "eef97b37-75d1-4c01-b7b9-7085302259bd",
+          "format": "email",
+          "error": {}
+        },
+        {
+          "name": "address",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "properties": [],
+          "GUID": "ee4aac04-64af-4e1d-a00b-597530c6a569",
+          "error": {}
+        },
+        {
+          "name": "usage_history ",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "document",
+          "properties": [],
+          "additionalProperties": false,
+          "error": {},
+          "GUID": "d81e02ad-1d58-4d27-94a6-8a0f94e4d922"
+        },
+        {
+          "name": "user_type ",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "properties": [],
+          "GUID": "b5747825-6a31-46c5-a155-bab8e24c9d78",
+          "error": {
+            "enum": false,
+            "enums": false
+          },
+          "enum": [
+            "monthly",
+            "annual",
+            "occasional"
+          ]
+        },
+        {
+          "name": "last_bike_used",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "integer",
+          "properties": [],
+          "GUID": "8c0da06a-0751-438f-a1dc-0999ddfcfdd6",
+          "primaryKey": false,
+          "error": {},
+          "relationshipType": "Foreign Key",
+          "foreignCollection": "81d6600d-e2eb-46e0-a5ef-66cd5bcde2d8",
+          "foreignField": [
+            "81d6600d-e2eb-46e0-a5ef-66cd5bcde2d8",
+            "e2f8c96b-547d-47e5-af6c-1e92e3bf93b9"
+          ],
+          "parentRelationship": "125c4589-e4c3-4aaa-bf45-3c2abc5790ae"
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "dcd696ae-28f9-497b-85a2-1749fdb4d91b"
+      },
+      "isActivated": true,
+      "additionalProperties": false,
+      "GUID": "c216bd4b-c05f-41c3-9d47-049fb556efca",
+      "bucketId": "daae4b8a-02c0-4bdb-b125-45130e79d171"
+    },
+    {
+      "collectionName": "Stations",
+      "type": "object",
+      "properties": [
+        {
+          "name": "station_id",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "integer",
+          "properties": [],
+          "error": {},
+          "primaryKey": true,
+          "GUID": "36ec558e-34eb-4c04-a8a7-6c18c76adf2a",
+          "childRelationships": [
+            "50f4bc9d-21f0-4f42-a634-8a421f127520",
+            "eca4a369-b86d-4a5c-8d54-74429fb419df",
+            "f4d9448a-482a-4f5e-ac90-c47d390b7fc0"
+          ]
+        },
+        {
+          "name": "station_location",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "document",
+          "properties": [],
+          "additionalProperties": false,
+          "error": {},
+          "GUID": "28fc9d32-fc6e-4d9a-885e-1057b2a0d4f2"
+        },
+        {
+          "name": "capacity",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "integer",
+          "properties": [],
+          "error": {},
+          "GUID": "937235dd-6ff3-4cc8-8773-d46abceb41e3"
+        },
+        {
+          "name": "real_time_disponibility",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "document",
+          "properties": [],
+          "additionalProperties": false,
+          "error": {},
+          "GUID": "42688da4-4f1e-48f2-a6a6-c600281b08fc"
+        },
+        {
+          "name": "bikes_parked",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "integer",
+          "properties": [],
+          "error": {},
+          "GUID": "d7f380cb-6ca5-4368-bacd-70d710d15ede",
+          "relationshipType": "Foreign Key",
+          "foreignCollection": "81d6600d-e2eb-46e0-a5ef-66cd5bcde2d8",
+          "foreignField": [
+            "81d6600d-e2eb-46e0-a5ef-66cd5bcde2d8",
+            "e2f8c96b-547d-47e5-af6c-1e92e3bf93b9"
+          ],
+          "parentRelationship": "9b2e22e1-214a-455c-b7b0-a4fcab60a653"
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "b3effb51-e1e0-480e-958a-1b1c6fa70918"
+      },
+      "isActivated": true,
+      "additionalProperties": false,
+      "GUID": "46985d73-11d3-49aa-879f-af903d2efa68",
+      "bucketId": "d6cb6c5c-9d02-4368-bab8-e0bdd1fa2100"
+    },
+    {
+      "collectionName": "Bikes",
+      "type": "object",
+      "properties": [
+        {
+          "name": "bikes_id",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "integer",
+          "properties": [],
+          "error": {},
+          "primaryKey": true,
+          "GUID": "e2f8c96b-547d-47e5-af6c-1e92e3bf93b9",
+          "childRelationships": [
+            "25e5acf4-c38b-46fb-b4ab-04f26dd22af7",
+            "125c4589-e4c3-4aaa-bf45-3c2abc5790ae",
+            "9b2e22e1-214a-455c-b7b0-a4fcab60a653",
+            "c1984dc7-0f42-4d20-ae9b-bc23aba4b9d9"
+          ]
+        },
+        {
+          "name": "bike_condition",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "properties": [],
+          "GUID": "ba3aa123-b664-49d7-8d82-6a07f1b59730",
+          "error": {}
+        },
+        {
+          "name": "total_kilometers_travelled",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "numeric",
+          "properties": [],
+          "GUID": "498ac33b-b90e-46f1-ad62-68e44dd94ed7",
+          "unit": "km",
+          "error": {}
+        },
+        {
+          "name": "last_usage",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "properties": [],
+          "GUID": "bfdc3245-bf68-4546-9490-fffd1c0d8e13",
+          "format": "date-time",
+          "error": {}
+        },
+        {
+          "name": "bikes_location",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "document",
+          "properties": [],
+          "additionalProperties": false,
+          "error": {},
+          "GUID": "3dc62e28-31e3-484a-b20d-f7fe60834317"
+        },
+        {
+          "name": "bike_station",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "integer",
+          "properties": [],
+          "error": {},
+          "GUID": "19ff70db-2204-4be1-b92c-40ead7defa35",
+          "relationshipType": "Foreign Key",
+          "foreignCollection": "46985d73-11d3-49aa-879f-af903d2efa68",
+          "foreignField": [
+            "46985d73-11d3-49aa-879f-af903d2efa68",
+            "36ec558e-34eb-4c04-a8a7-6c18c76adf2a"
+          ],
+          "parentRelationship": "f4d9448a-482a-4f5e-ac90-c47d390b7fc0"
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "61083b5f-28c5-47dc-be22-67d04fa334c8"
+      },
+      "isActivated": true,
+      "additionalProperties": false,
+      "GUID": "81d6600d-e2eb-46e0-a5ef-66cd5bcde2d8",
+      "bucketId": "d6cb6c5c-9d02-4368-bab8-e0bdd1fa2100"
+    },
+    {
+      "collectionName": "Events",
+      "type": "object",
+      "properties": [
+        {
+          "name": "events_id",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "integer",
+          "properties": [],
+          "error": {},
+          "primaryKey": true,
+          "GUID": "8847d63e-0d19-4a38-9573-24d0790e13ab"
+        },
+        {
+          "name": "event_description",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "properties": [],
+          "error": {},
+          "GUID": "581f20d3-e848-4394-9f9d-fc48acbdecd5"
+        },
+        {
+          "name": "weather",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "properties": [],
+          "error": {},
+          "GUID": "b5ad7a8c-201b-447d-a126-348cf33db444"
+        },
+        {
+          "name": "date",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "properties": [],
+          "GUID": "0bccc617-7539-4946-9155-2a5532a911e8",
+          "format": "date",
+          "error": {}
+        },
+        {
+          "name": "concerned_bike",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "integer",
+          "properties": [],
+          "error": {},
+          "GUID": "439c4c03-3378-46a5-8d54-90bc7a7157e9",
+          "relationshipType": "Foreign Key",
+          "foreignCollection": "81d6600d-e2eb-46e0-a5ef-66cd5bcde2d8",
+          "foreignField": [
+            "81d6600d-e2eb-46e0-a5ef-66cd5bcde2d8",
+            "e2f8c96b-547d-47e5-af6c-1e92e3bf93b9"
+          ],
+          "parentRelationship": "c1984dc7-0f42-4d20-ae9b-bc23aba4b9d9"
+        },
+        {
+          "name": "concerned_trip",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "integer",
+          "properties": [],
+          "error": {},
+          "GUID": "b00b91ff-11e9-43e2-9b79-ab0291a84752",
+          "relationshipType": "Foreign Key",
+          "foreignCollection": "4a21f830-248a-4231-aa75-8dfe93191c86",
+          "foreignField": [
+            "4a21f830-248a-4231-aa75-8dfe93191c86",
+            "e4129c10-1bd5-4400-8311-67449dc09980"
+          ],
+          "parentRelationship": "645742d2-2d53-4aa0-bf07-b7ee262bcb80"
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "288bad13-d8e1-4853-a741-4f1370db9df2"
+      },
+      "isActivated": true,
+      "additionalProperties": false,
+      "GUID": "d6975f02-f19e-4157-97e1-0304b2e0d3f8",
+      "bucketId": "7994d8cd-03a8-47cd-861d-a499b8a372c9"
+    },
+    {
+      "collectionName": "Subscription",
+      "type": "object",
+      "properties": [
+        {
+          "name": "subscription_id",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "integer",
+          "properties": [],
+          "error": {},
+          "primaryKey": true,
+          "GUID": "19da7ed6-3bd2-4eee-b6aa-2d04731fc7ad"
+        },
+        {
+          "name": "start_date",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "properties": [],
+          "GUID": "6efeec88-c6b6-4585-8ae4-b1b491e87dd5",
+          "format": "date",
+          "error": {}
+        },
+        {
+          "name": "end_date",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "properties": [],
+          "GUID": "0c71de34-bd07-4867-b552-1dba0e0d0600",
+          "format": "date",
+          "error": {}
+        },
+        {
+          "name": "status",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "properties": [],
+          "GUID": "374427ac-48d1-4d20-b810-523f3a5ca3c9",
+          "error": {
+            "enum": false,
+            "enums": false
+          },
+          "enum": [
+            "new",
+            "renewed",
+            "stopped"
+          ]
+        },
+        {
+          "name": "subscriber",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "integer",
+          "properties": [],
+          "error": {},
+          "GUID": "c9225d46-e9b5-466e-babb-6aee213161ab",
+          "relationshipType": "Foreign Key",
+          "foreignCollection": "c216bd4b-c05f-41c3-9d47-049fb556efca",
+          "foreignField": [
+            "c216bd4b-c05f-41c3-9d47-049fb556efca",
+            "e325f805-ae3f-4e1f-85ae-f826d9fb0d93"
+          ],
+          "parentRelationship": "e1aab1ad-90a4-4650-a7fc-76130338af6a"
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "8bfbb14d-baeb-4766-8129-7887ca296d8c"
+      },
+      "isActivated": true,
+      "additionalProperties": false,
+      "GUID": "132ddc54-e18f-4b49-953b-6adb6f683afa",
+      "bucketId": "daae4b8a-02c0-4bdb-b125-45130e79d171"
+    },
+    {
+      "collectionName": "Transaction",
+      "type": "object",
+      "properties": [
+        {
+          "name": "transaction_id",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "integer",
+          "properties": [],
+          "error": {},
+          "primaryKey": true,
+          "GUID": "68432837-f25d-4368-b330-017dee314d5b"
+        },
+        {
+          "name": "payment_information",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "properties": [],
+          "GUID": "e2b4d9a1-ed25-45a4-b81c-76d3682e56ad",
+          "error": {}
+        },
+        {
+          "name": "price",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "numeric",
+          "properties": [],
+          "error": {},
+          "GUID": "ad79c244-1297-426b-bda9-5da16410e867"
+        },
+        {
+          "name": "concerned_user",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "integer",
+          "properties": [],
+          "error": {},
+          "GUID": "ffa91bba-b339-4a46-b4ce-be66ae8f40cc",
+          "relationshipType": "Foreign Key",
+          "foreignCollection": "c216bd4b-c05f-41c3-9d47-049fb556efca",
+          "foreignField": [
+            "c216bd4b-c05f-41c3-9d47-049fb556efca",
+            "e325f805-ae3f-4e1f-85ae-f826d9fb0d93"
+          ],
+          "parentRelationship": "62166940-70e7-439b-a8da-8df1dea754d9"
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "cf94227e-97f5-4dd3-a3ea-047a8540215b"
+      },
+      "isActivated": true,
+      "additionalProperties": false,
+      "GUID": "536ddcef-5430-4093-9626-cd6352390556",
+      "bucketId": "daae4b8a-02c0-4bdb-b125-45130e79d171"
+    }
+  ],
+  "buckets": [
+    {
+      "name": "Trips Management",
+      "type": "bucket",
+      "collectionIds": [
+        "4a21f830-248a-4231-aa75-8dfe93191c86",
+        "46985d73-11d3-49aa-879f-af903d2efa68",
+        "81d6600d-e2eb-46e0-a5ef-66cd5bcde2d8"
+      ],
+      "backgroundColor": {
+        "r": 216,
+        "g": 0,
+        "b": 115,
+        "a": 1
+      },
+      "show": true,
+      "isActivated": true,
+      "GUID": "d6cb6c5c-9d02-4368-bab8-e0bdd1fa2100"
+    },
+    {
+      "name": "Operation",
+      "type": "bucket",
+      "collectionIds": [
+        "d6975f02-f19e-4157-97e1-0304b2e0d3f8"
+      ],
+      "backgroundColor": {
+        "r": 33,
+        "g": 150,
+        "b": 243,
+        "a": 1
+      },
+      "show": true,
+      "isActivated": true,
+      "GUID": "7994d8cd-03a8-47cd-861d-a499b8a372c9"
+    },
+    {
+      "name": "Users Management",
+      "type": "bucket",
+      "collectionIds": [
+        "132ddc54-e18f-4b49-953b-6adb6f683afa",
+        "c216bd4b-c05f-41c3-9d47-049fb556efca",
+        "536ddcef-5430-4093-9626-cd6352390556"
+      ],
+      "backgroundColor": {
+        "r": 0,
+        "g": 138,
+        "b": 0,
+        "a": 1
+      },
+      "show": true,
+      "isActivated": true,
+      "GUID": "daae4b8a-02c0-4bdb-b125-45130e79d171"
+    }
+  ],
+  "views": [],
+  "relationships": [
+    {
+      "name": "fk_Bikes_bikes_id_to_Trips_bike_used",
+      "relationshipType": "Foreign Key",
+      "parentField": [
+        [
+          "81d6600d-e2eb-46e0-a5ef-66cd5bcde2d8",
+          "e2f8c96b-547d-47e5-af6c-1e92e3bf93b9"
+        ]
+      ],
+      "parentCardinality": "1",
+      "childField": [
+        [
+          "4a21f830-248a-4231-aa75-8dfe93191c86",
+          "f315078f-c97c-4f9b-9d0d-36e932c77aa9"
+        ]
+      ],
+      "isActivated": true,
+      "childCardinality": "1..n",
+      "parentCollection": "81d6600d-e2eb-46e0-a5ef-66cd5bcde2d8",
+      "childCollection": "4a21f830-248a-4231-aa75-8dfe93191c86",
+      "GUID": "25e5acf4-c38b-46fb-b4ab-04f26dd22af7",
+      "hackoladeStyles": {
+        "GUID": "b293bdfa-96f6-423a-b84f-266abaef9aca",
+        "autoPositioning": false,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 1645.3333333333335,
+            "y": 2628.5895861152076
+          },
+          {
+            "x": 1613.9999999999993,
+            "y": 2628.5895861152076
+          },
+          {
+            "x": 1613.9999999999993,
+            "y": 2812.6985418684503
+          },
+          {
+            "x": 1643.000000000001,
+            "y": 2812.6985418684503
+          }
+        ],
+        "sides": [
+          "left",
+          "left"
+        ]
+      }
+    },
+    {
+      "name": "fk_Users _user_id _to_Trips_trip_user",
+      "relationshipType": "Foreign Key",
+      "parentField": [
+        [
+          "c216bd4b-c05f-41c3-9d47-049fb556efca",
+          "e325f805-ae3f-4e1f-85ae-f826d9fb0d93"
+        ]
+      ],
+      "parentCardinality": "1",
+      "childField": [
+        [
+          "4a21f830-248a-4231-aa75-8dfe93191c86",
+          "9eed260a-6494-4b67-8984-f87984161b9f"
+        ]
+      ],
+      "isActivated": true,
+      "childCardinality": "1..n",
+      "parentCollection": "c216bd4b-c05f-41c3-9d47-049fb556efca",
+      "childCollection": "4a21f830-248a-4231-aa75-8dfe93191c86",
+      "GUID": "344f0073-c56e-4a93-8ff9-dff9d3a7510d",
+      "hackoladeStyles": {
+        "GUID": "f7b691ff-7ef8-4c93-91ea-aea317949f9d",
+        "autoPositioning": false,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 1908.3333333333335,
+            "y": 2645.5964245190203
+          },
+          {
+            "y": 2645.5964245190203,
+            "x": 2093.875929312177
+          },
+          {
+            "y": 2562.388916015624,
+            "x": 2093.875929312177
+          },
+          {
+            "x": 2225.875929312177,
+            "y": 2562.388916015624
+          }
+        ],
+        "sides": [
+          "right",
+          "left"
+        ]
+      }
+    },
+    {
+      "name": "fk_Stations_station_id_to_Trips_from_station ",
+      "relationshipType": "Foreign Key",
+      "parentField": [
+        [
+          "46985d73-11d3-49aa-879f-af903d2efa68",
+          "36ec558e-34eb-4c04-a8a7-6c18c76adf2a"
+        ]
+      ],
+      "parentCardinality": "1",
+      "childField": [
+        [
+          "4a21f830-248a-4231-aa75-8dfe93191c86",
+          "290bdd2c-9d6e-4e95-9971-c707a3f182ad"
+        ]
+      ],
+      "isActivated": true,
+      "childCardinality": "1..n",
+      "parentCollection": "46985d73-11d3-49aa-879f-af903d2efa68",
+      "childCollection": "4a21f830-248a-4231-aa75-8dfe93191c86",
+      "GUID": "50f4bc9d-21f0-4f42-a634-8a421f127520",
+      "hackoladeStyles": {
+        "GUID": "b26bd429-1e42-44de-b526-661570228a10",
+        "autoPositioning": false,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 1645.3333333333335,
+            "y": 2665.340682492845
+          },
+          {
+            "x": 1588.3333333333342,
+            "y": 2665.340682492845
+          },
+          {
+            "x": 1588.3333333333342,
+            "y": 3092.0858891614503
+          },
+          {
+            "x": 1649.0000000000014,
+            "y": 3092.0858891614503
+          }
+        ],
+        "sides": [
+          "left",
+          "left"
+        ]
+      }
+    },
+    {
+      "name": "fk_Stations_station_id_to_Trips_to_station",
+      "relationshipType": "Foreign Key",
+      "parentField": [
+        [
+          "46985d73-11d3-49aa-879f-af903d2efa68",
+          "36ec558e-34eb-4c04-a8a7-6c18c76adf2a"
+        ]
+      ],
+      "parentCardinality": "1",
+      "childField": [
+        [
+          "4a21f830-248a-4231-aa75-8dfe93191c86",
+          "3618563b-d343-47c1-a0cc-14fbda3a6c2f"
+        ]
+      ],
+      "isActivated": true,
+      "childCardinality": "1..n",
+      "parentCollection": "46985d73-11d3-49aa-879f-af903d2efa68",
+      "childCollection": "4a21f830-248a-4231-aa75-8dfe93191c86",
+      "GUID": "eca4a369-b86d-4a5c-8d54-74429fb419df",
+      "hackoladeStyles": {
+        "GUID": "5c5bf299-df0a-4599-a5c6-0fbb83d9374a",
+        "autoPositioning": false,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 1645.3333333333335,
+            "y": 2681.5843373151793
+          },
+          {
+            "x": 1517.6666666666674,
+            "y": 2681.5843373151793
+          },
+          {
+            "x": 1517.6666666666674,
+            "y": 3101.0331434780005
+          },
+          {
+            "x": 1649.0000000000014,
+            "y": 3101.0331434780005
+          }
+        ],
+        "sides": [
+          "left",
+          "left"
+        ]
+      }
+    },
+    {
+      "name": "fk_Bikes_bikes_id_to_Users _last_bike_used",
+      "relationshipType": "Foreign Key",
+      "parentField": [
+        [
+          "81d6600d-e2eb-46e0-a5ef-66cd5bcde2d8",
+          "e2f8c96b-547d-47e5-af6c-1e92e3bf93b9"
+        ]
+      ],
+      "parentCardinality": "1",
+      "childField": [
+        [
+          "c216bd4b-c05f-41c3-9d47-049fb556efca",
+          "8c0da06a-0751-438f-a1dc-0999ddfcfdd6"
+        ]
+      ],
+      "isActivated": true,
+      "childCardinality": "1..n",
+      "parentCollection": "81d6600d-e2eb-46e0-a5ef-66cd5bcde2d8",
+      "childCollection": "c216bd4b-c05f-41c3-9d47-049fb556efca",
+      "GUID": "125c4589-e4c3-4aaa-bf45-3c2abc5790ae",
+      "hackoladeStyles": {
+        "GUID": "e037dd80-ed63-418c-877b-5216c34ae336",
+        "autoPositioning": false,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 2225.875929312177,
+            "y": 2702.9539292561403
+          },
+          {
+            "x": 2143.437964656089,
+            "y": 2702.9539292561403
+          },
+          {
+            "x": 2143.437964656089,
+            "y": 2802.6650269190814
+          },
+          {
+            "x": 1909.000000000001,
+            "y": 2802.6650269190814
+          }
+        ],
+        "sides": [
+          "left",
+          "right"
+        ]
+      }
+    },
+    {
+      "name": "fk_Bikes_bikes_id_to_Stations_bikes_parked",
+      "relationshipType": "Foreign Key",
+      "parentField": [
+        [
+          "81d6600d-e2eb-46e0-a5ef-66cd5bcde2d8",
+          "e2f8c96b-547d-47e5-af6c-1e92e3bf93b9"
+        ]
+      ],
+      "parentCardinality": "1",
+      "childField": [
+        [
+          "46985d73-11d3-49aa-879f-af903d2efa68",
+          "d7f380cb-6ca5-4368-bacd-70d710d15ede"
+        ]
+      ],
+      "isActivated": true,
+      "childCardinality": "1",
+      "parentCollection": "81d6600d-e2eb-46e0-a5ef-66cd5bcde2d8",
+      "childCollection": "46985d73-11d3-49aa-879f-af903d2efa68",
+      "GUID": "9b2e22e1-214a-455c-b7b0-a4fcab60a653",
+      "hackoladeStyles": {
+        "GUID": "af819bb2-b1d0-4ddf-8875-8016e0362179",
+        "autoPositioning": false,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 1914.0000000000014,
+            "y": 3180.067404118731
+          },
+          {
+            "x": 1929.000000000001,
+            "y": 3180.067404118731
+          },
+          {
+            "x": 1929.000000000001,
+            "y": 2815.5664909558845
+          },
+          {
+            "x": 1909.000000000001,
+            "y": 2815.5664909558845
+          }
+        ],
+        "sides": [
+          "right",
+          "right"
+        ]
+      }
+    },
+    {
+      "name": "fk_Stations_station_id_to_Bikes_bike_station",
+      "relationshipType": "Foreign Key",
+      "parentField": [
+        [
+          "46985d73-11d3-49aa-879f-af903d2efa68",
+          "36ec558e-34eb-4c04-a8a7-6c18c76adf2a"
+        ]
+      ],
+      "parentCardinality": "1",
+      "childField": [
+        [
+          "81d6600d-e2eb-46e0-a5ef-66cd5bcde2d8",
+          "19ff70db-2204-4be1-b92c-40ead7defa35"
+        ]
+      ],
+      "isActivated": true,
+      "childCardinality": "1..n",
+      "parentCollection": "46985d73-11d3-49aa-879f-af903d2efa68",
+      "childCollection": "81d6600d-e2eb-46e0-a5ef-66cd5bcde2d8",
+      "GUID": "f4d9448a-482a-4f5e-ac90-c47d390b7fc0",
+      "hackoladeStyles": {
+        "GUID": "95c0e5ce-f7ac-403e-9de3-1feb83e7a388",
+        "autoPositioning": false,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 1643.000000000001,
+            "y": 2887.242658392367
+          },
+          {
+            "x": 1551.3333333333344,
+            "y": 2887.242658392367
+          },
+          {
+            "y": 3046.8889058431,
+            "x": 1551.3333333333344
+          },
+          {
+            "y": 3046.8889058431,
+            "x": 1662.1200000000038
+          },
+          {
+            "x": 1662.1200000000038,
+            "y": 3061.8889058431
+          }
+        ],
+        "sides": [
+          "left",
+          "top"
+        ]
+      }
+    },
+    {
+      "name": "fk_Bikes_bikes_id_to_Events_concerned_bike",
+      "relationshipType": "Foreign Key",
+      "parentField": [
+        [
+          "81d6600d-e2eb-46e0-a5ef-66cd5bcde2d8",
+          "e2f8c96b-547d-47e5-af6c-1e92e3bf93b9"
+        ]
+      ],
+      "parentCardinality": "1..n",
+      "childField": [
+        [
+          "d6975f02-f19e-4157-97e1-0304b2e0d3f8",
+          "439c4c03-3378-46a5-8d54-90bc7a7157e9"
+        ]
+      ],
+      "isActivated": true,
+      "childCardinality": "1",
+      "parentCollection": "81d6600d-e2eb-46e0-a5ef-66cd5bcde2d8",
+      "childCollection": "d6975f02-f19e-4157-97e1-0304b2e0d3f8",
+      "GUID": "c1984dc7-0f42-4d20-ae9b-bc23aba4b9d9",
+      "hackoladeStyles": {
+        "GUID": "312a1b84-f963-40dd-a565-42efea9c3e9b",
+        "autoPositioning": false,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 2230.6666666666647,
+            "y": 3323.5307379617952
+          },
+          {
+            "x": 2052.000000000001,
+            "y": 3323.5307379617952
+          },
+          {
+            "x": 2052.000000000001,
+            "y": 2958.8889058430987
+          },
+          {
+            "x": 1909.000000000001,
+            "y": 2958.8889058430987
+          }
+        ],
+        "sides": [
+          "left",
+          "right"
+        ]
+      }
+    },
+    {
+      "name": "fk_Trips_trip_id_to_Events_concerned_trip",
+      "relationshipType": "Foreign Key",
+      "parentField": [
+        [
+          "4a21f830-248a-4231-aa75-8dfe93191c86",
+          "e4129c10-1bd5-4400-8311-67449dc09980"
+        ]
+      ],
+      "parentCardinality": "1..n",
+      "childField": [
+        [
+          "d6975f02-f19e-4157-97e1-0304b2e0d3f8",
+          "b00b91ff-11e9-43e2-9b79-ab0291a84752"
+        ]
+      ],
+      "isActivated": true,
+      "childCardinality": "1",
+      "parentCollection": "4a21f830-248a-4231-aa75-8dfe93191c86",
+      "childCollection": "d6975f02-f19e-4157-97e1-0304b2e0d3f8",
+      "GUID": "645742d2-2d53-4aa0-bf07-b7ee262bcb80",
+      "hackoladeStyles": {
+        "GUID": "b86d4a6a-9fcd-42f3-8c00-271627647f0b",
+        "autoPositioning": false,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 2230.6666666666647,
+            "y": 3341.4168663261844
+          },
+          {
+            "x": 2113.3333333333335,
+            "y": 3341.4168663261844
+          },
+          {
+            "x": 2113.3333333333335,
+            "y": 2685.888905843098
+          },
+          {
+            "x": 1908.3333333333335,
+            "y": 2685.888905843098
+          }
+        ],
+        "sides": [
+          "left",
+          "right"
+        ]
+      }
+    },
+    {
+      "name": "fk_Users _user_id _to_Transaction_concerned_user",
+      "relationshipType": "Foreign Key",
+      "parentField": [
+        [
+          "c216bd4b-c05f-41c3-9d47-049fb556efca",
+          "e325f805-ae3f-4e1f-85ae-f826d9fb0d93"
+        ]
+      ],
+      "parentCardinality": "1..n",
+      "childField": [
+        [
+          "536ddcef-5430-4093-9626-cd6352390556",
+          "ffa91bba-b339-4a46-b4ce-be66ae8f40cc"
+        ]
+      ],
+      "isActivated": true,
+      "childCardinality": "1",
+      "parentCollection": "c216bd4b-c05f-41c3-9d47-049fb556efca",
+      "childCollection": "536ddcef-5430-4093-9626-cd6352390556",
+      "GUID": "62166940-70e7-439b-a8da-8df1dea754d9",
+      "hackoladeStyles": {
+        "GUID": "84e765fa-0598-46b7-8cab-488ce624effd",
+        "autoPositioning": false,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 2480.542595978842,
+            "y": 2867.7872625894734
+          },
+          {
+            "x": 2538.8759293121784,
+            "y": 2867.7872625894734
+          },
+          {
+            "x": 2538.8759293121784,
+            "y": 2556.287262589473
+          },
+          {
+            "x": 2478.875929312177,
+            "y": 2556.287262589473
+          }
+        ],
+        "sides": [
+          "right",
+          "right"
+        ]
+      }
+    },
+    {
+      "name": "fk_Users _user_id _to_Subscription_subscriber",
+      "relationshipType": "Foreign Key",
+      "parentField": [
+        [
+          "c216bd4b-c05f-41c3-9d47-049fb556efca",
+          "e325f805-ae3f-4e1f-85ae-f826d9fb0d93"
+        ]
+      ],
+      "parentCardinality": "1..n",
+      "childField": [
+        [
+          "132ddc54-e18f-4b49-953b-6adb6f683afa",
+          "c9225d46-e9b5-466e-babb-6aee213161ab"
+        ]
+      ],
+      "isActivated": true,
+      "childCardinality": "1",
+      "parentCollection": "c216bd4b-c05f-41c3-9d47-049fb556efca",
+      "childCollection": "132ddc54-e18f-4b49-953b-6adb6f683afa",
+      "GUID": "e1aab1ad-90a4-4650-a7fc-76130338af6a",
+      "hackoladeStyles": {
+        "GUID": "c5d2f39f-674b-4f54-8f8c-4f37f13b450a",
+        "autoPositioning": false,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 2480.5425959788417,
+            "y": 3030.842865616817
+          },
+          {
+            "x": 2512.8759293121766,
+            "y": 3030.842865616817
+          },
+          {
+            "x": 2512.8759293121766,
+            "y": 2566.95392925614
+          },
+          {
+            "x": 2478.875929312177,
+            "y": 2566.95392925614
+          }
+        ],
+        "sides": [
+          "right",
+          "right"
+        ]
+      }
+    }
+  ],
+  "users": [],
+  "diagramViews": [],
+  "idToNameHashTable": {
+    "d6cb6c5c-9d02-4368-bab8-e0bdd1fa2100": "Trips Management",
+    "4a21f830-248a-4231-aa75-8dfe93191c86": "Trips",
+    "e4129c10-1bd5-4400-8311-67449dc09980": "trip_id",
+    "926654e5-7524-4f33-ad73-9f981e5dd131": "start_time",
+    "188c4b76-24bc-4e28-87a2-0102440c2a28": "end_time",
+    "8928721b-5952-4862-896d-d8fb96f6c95d": "trip_duration",
+    "0c9158eb-7b65-405f-b155-f6bf9412975e": "trip_distance",
+    "f315078f-c97c-4f9b-9d0d-36e932c77aa9": "bike_used",
+    "9eed260a-6494-4b67-8984-f87984161b9f": "trip_user",
+    "290bdd2c-9d6e-4e95-9971-c707a3f182ad": "from_station ",
+    "3618563b-d343-47c1-a0cc-14fbda3a6c2f": "to_station",
+    "c216bd4b-c05f-41c3-9d47-049fb556efca": "Users ",
+    "e325f805-ae3f-4e1f-85ae-f826d9fb0d93": "user_id ",
+    "709b22c3-28db-4515-a91c-152be41fa82f": "first_name",
+    "db78024a-2500-4848-817f-00c97ff8afb9": "last_name",
+    "4559cca5-bae0-471f-9310-50b640a284be": "age",
+    "adc5f0ae-24cd-4166-89a3-cc69f26401c7": "gender",
+    "ee4aac04-64af-4e1d-a00b-597530c6a569": "address",
+    "d81e02ad-1d58-4d27-94a6-8a0f94e4d922": "usage_history ",
+    "b5747825-6a31-46c5-a155-bab8e24c9d78": "user_type ",
+    "8c0da06a-0751-438f-a1dc-0999ddfcfdd6": "last_bike_used",
+    "46985d73-11d3-49aa-879f-af903d2efa68": "Stations",
+    "36ec558e-34eb-4c04-a8a7-6c18c76adf2a": "station_id",
+    "28fc9d32-fc6e-4d9a-885e-1057b2a0d4f2": "station_location",
+    "937235dd-6ff3-4cc8-8773-d46abceb41e3": "capacity",
+    "42688da4-4f1e-48f2-a6a6-c600281b08fc": "real_time_disponibility",
+    "d7f380cb-6ca5-4368-bacd-70d710d15ede": "bikes_parked",
+    "81d6600d-e2eb-46e0-a5ef-66cd5bcde2d8": "Bikes",
+    "e2f8c96b-547d-47e5-af6c-1e92e3bf93b9": "bikes_id",
+    "498ac33b-b90e-46f1-ad62-68e44dd94ed7": "total_kilometers_travelled",
+    "3dc62e28-31e3-484a-b20d-f7fe60834317": "bikes_location",
+    "19ff70db-2204-4be1-b92c-40ead7defa35": "bike_station",
+    "7994d8cd-03a8-47cd-861d-a499b8a372c9": "Operation",
+    "d6975f02-f19e-4157-97e1-0304b2e0d3f8": "Events",
+    "8847d63e-0d19-4a38-9573-24d0790e13ab": "events_id",
+    "581f20d3-e848-4394-9f9d-fc48acbdecd5": "event_description",
+    "b5ad7a8c-201b-447d-a126-348cf33db444": "weather",
+    "daae4b8a-02c0-4bdb-b125-45130e79d171": "Users Management",
+    "132ddc54-e18f-4b49-953b-6adb6f683afa": "Subscription",
+    "19da7ed6-3bd2-4eee-b6aa-2d04731fc7ad": "subscription_id",
+    "6efeec88-c6b6-4585-8ae4-b1b491e87dd5": "start_date",
+    "0c71de34-bd07-4867-b552-1dba0e0d0600": "end_date",
+    "536ddcef-5430-4093-9626-cd6352390556": "Transaction",
+    "68432837-f25d-4368-b330-017dee314d5b": "transaction_id",
+    "e2b4d9a1-ed25-45a4-b81c-76d3682e56ad": "payment_information",
+    "ad79c244-1297-426b-bda9-5da16410e867": "price",
+    "374427ac-48d1-4d20-b810-523f3a5ca3c9": "status",
+    "c9225d46-e9b5-466e-babb-6aee213161ab": "subscriber",
+    "ffa91bba-b339-4a46-b4ce-be66ae8f40cc": "concerned_user",
+    "0bccc617-7539-4946-9155-2a5532a911e8": "date",
+    "439c4c03-3378-46a5-8d54-90bc7a7157e9": "concerned_bike",
+    "b00b91ff-11e9-43e2-9b79-ab0291a84752": "concerned_trip",
+    "ba3aa123-b664-49d7-8d82-6a07f1b59730": "bike_condition",
+    "eef97b37-75d1-4c01-b7b9-7085302259bd": "email",
+    "25e5acf4-c38b-46fb-b4ab-04f26dd22af7": "fk_Bikes_bikes_id_to_Trips_bike_used",
+    "344f0073-c56e-4a93-8ff9-dff9d3a7510d": "fk_Users _user_id _to_Trips_trip_user",
+    "50f4bc9d-21f0-4f42-a634-8a421f127520": "fk_Stations_station_id_to_Trips_from_station ",
+    "eca4a369-b86d-4a5c-8d54-74429fb419df": "fk_Stations_station_id_to_Trips_to_station",
+    "125c4589-e4c3-4aaa-bf45-3c2abc5790ae": "fk_Bikes_bikes_id_to_Users _last_bike_used",
+    "9b2e22e1-214a-455c-b7b0-a4fcab60a653": "fk_Bikes_bikes_id_to_Stations_bikes_parked",
+    "f4d9448a-482a-4f5e-ac90-c47d390b7fc0": "fk_Stations_station_id_to_Bikes_bike_station",
+    "bfdc3245-bf68-4546-9490-fffd1c0d8e13": "last_usage",
+    "c1984dc7-0f42-4d20-ae9b-bc23aba4b9d9": "fk_Bikes_bikes_id_to_Events_concerned_bike",
+    "645742d2-2d53-4aa0-bf07-b7ee262bcb80": "fk_Trips_trip_id_to_Events_concerned_trip",
+    "62166940-70e7-439b-a8da-8df1dea754d9": "fk_Users _user_id _to_Transaction_concerned_user",
+    "e1aab1ad-90a4-4650-a7fc-76130338af6a": "fk_Users _user_id _to_Subscription_subscriber"
+  },
+  "definitions": {
+    "type": "definitions",
+    "properties": [],
+    "GUID": "4de427cd-1172-4566-9bb9-01aa117e6618"
+  },
+  "polyglotDefinitions": {
+    "type": "polyglotDefinitions",
+    "properties": [],
+    "GUID": "c6024f96-baab-4e04-88c0-d0134e9e445f"
+  },
+  "externalDefinitions": {
+    "type": "externalDefinitions",
+    "properties": [],
+    "GUID": "92d26cdc-a7de-4872-a2d7-30f301578c5f"
+  },
+  "sources": [],
+  "decorativeSymbols": [],
+  "dbVendor": "JSON",
+  "dbVersion": "2019-09",
+  "appTarget": "JSON",
+  "creationTS": "2024-12-27T17:42:42.197Z",
+  "GUID": "64d80bbf-c034-4d01-b139-1599928c5ab5",
+  "isLineageEnabled": false,
+  "lastModifTS": "2024-12-28T22:49:21.862Z",
+  "persistenceSchemaVersion": "7",
+  "isCreatedByPlugin": true,
+  "pluginInformation": {
+    "pluginEngineVersion": "1.0.0"
+  },
+  "applicationInformation": {
+    "version": "7.8.6"
+  },
+  "hackoladeMeta": {},
+  "settings": {
+    "centralPane": {
+      "dbLevel": {
+        "erd": [
+          {
+            "GUID": "4a21f830-248a-4231-aa75-8dfe93191c86",
+            "x": 1645.3333333333335,
+            "y": 2501.888905843098,
+            "width": 263,
+            "height": 199,
+            "color": {}
+          },
+          {
+            "GUID": "c216bd4b-c05f-41c3-9d47-049fb556efca",
+            "x": 2225.875929312177,
+            "y": 2530.620595922807,
+            "width": 253,
+            "height": 206,
+            "color": {}
+          },
+          {
+            "GUID": "46985d73-11d3-49aa-879f-af903d2efa68",
+            "x": 1649.0000000000014,
+            "y": 3061.8889058431,
+            "width": 265,
+            "height": 150,
+            "color": {}
+          },
+          {
+            "GUID": "81d6600d-e2eb-46e0-a5ef-66cd5bcde2d8",
+            "x": 1643.000000000001,
+            "y": 2774.8889058430987,
+            "width": 266,
+            "height": 199,
+            "color": {}
+          },
+          {
+            "GUID": "d6975f02-f19e-4157-97e1-0304b2e0d3f8",
+            "x": 2230.6666666666647,
+            "y": 3216.888916015625,
+            "width": 306,
+            "height": 162,
+            "color": {}
+          },
+          {
+            "GUID": "132ddc54-e18f-4b49-953b-6adb6f683afa",
+            "x": 2234.5425959788417,
+            "y": 2926.509532283484,
+            "width": 246,
+            "height": 128,
+            "color": {}
+          },
+          {
+            "GUID": "536ddcef-5430-4093-9626-cd6352390556",
+            "x": 2230.542595978842,
+            "y": 2779.2872625894734,
+            "width": 250,
+            "height": 105,
+            "color": {}
+          }
+        ],
+        "erdDefinitions": {
+          "erd": [],
+          "rootPath": [],
+          "entities": [],
+          "decorativeSymbols": []
+        },
+        "buckets": [
+          {
+            "x": 1477.6666666666674,
+            "y": 2461.888905843098,
+            "GUID": "d6cb6c5c-9d02-4368-bab8-e0bdd1fa2100"
+          },
+          {
+            "x": 2190.6666666666647,
+            "y": 3176.888916015625,
+            "GUID": "7994d8cd-03a8-47cd-861d-a499b8a372c9"
+          },
+          {
+            "x": 2185.875929312177,
+            "y": 2490.620595922807,
+            "GUID": "daae4b8a-02c0-4bdb-b125-45130e79d171"
+          }
+        ],
+        "collapsedNodes": [],
+        "activeRelationship": "",
+        "activeRelationshipFields": {
+          "childField": [],
+          "parentField": []
+        },
+        "selectedCollections": [],
+        "displayColorPicker": false,
+        "graphView": {
+          "erd": [],
+          "buckets": [],
+          "decorativeSymbols": [],
+          "forceLayout": true,
+          "defaultLinkLength": 300
+        },
+        "diagramViews": [],
+        "decorativeSymbols": [],
+        "nestedCollectionsLayout": "horizontal",
+        "options": [
+          {
+            "autoWidth": false,
+            "autoHeight": false,
+            "GUID": "4a21f830-248a-4231-aa75-8dfe93191c86"
+          },
+          {
+            "autoWidth": false,
+            "autoHeight": false,
+            "GUID": "c216bd4b-c05f-41c3-9d47-049fb556efca"
+          },
+          {
+            "autoWidth": false,
+            "autoHeight": false,
+            "GUID": "46985d73-11d3-49aa-879f-af903d2efa68"
+          },
+          {
+            "autoWidth": false,
+            "autoHeight": false,
+            "GUID": "81d6600d-e2eb-46e0-a5ef-66cd5bcde2d8"
+          },
+          {
+            "autoWidth": false,
+            "autoHeight": false,
+            "GUID": "d6975f02-f19e-4157-97e1-0304b2e0d3f8"
+          },
+          {
+            "autoWidth": false,
+            "autoHeight": false,
+            "GUID": "132ddc54-e18f-4b49-953b-6adb6f683afa"
+          }
+        ],
+        "relationshipUpdateDisabled": false
+      },
+      "collectionLevel": {},
+      "changed": false
+    },
+    "dtDiagram": {
+      "collapsedNodes": [],
+      "shouldDistributeCollections": false
+    }
+  }
+}
